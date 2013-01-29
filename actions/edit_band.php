@@ -16,6 +16,11 @@ fwrite($f,$data_string);
 
 // (3) close the file
 fclose($f);
+
+$_SESSION['message'] = array(
+	'text' => 'Your band has been edited.',
+	'type' => 'info'
+	);
 // Redirect to homepage
 header('Location:../');
 
